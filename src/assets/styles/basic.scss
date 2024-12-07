@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    user-select: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1270px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@mixin mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin back-img-set {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin flex-row-reverse {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-side-reverse {
+    flex-direction: row-reverse;
+    display: flex;
+}
+
+@mixin flex-side {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-wrap {
+    flex-wrap: wrap;
+}
+
+@mixin justify-content-center {
+    justify-content: center;
+}
+
+@mixin justify-content-space-between {
+    justify-content: space-between;
+}
+
+@mixin justify-contnet-flex-end {
+    justify-content: flex-end;
+}
+@mixin justify-contnet-flex-start {
+    justify-content: flex-start;
+}
+
+@mixin col-12 {
+    width: 100%;
+}
+
+@mixin col-11 {
+    width: 91.66666%;
+}
+
+@mixin col-10 {
+    width: 83.33333%;
+}
+
+@mixin col-9 {
+    width: 75%;
+}
+
+@mixin col-8 {
+    width: 66.66666%;
+}
+
+@mixin col-7 {
+    width: 58.33333%;
+}
+
+@mixin col-6 {
+    width: 50%;
+}
+
+@mixin col-5 {
+    width: 41.66667%;
+}
+
+@mixin col-4 {
+    width: 33.33333%;
+}
+
+@mixin col-3 {
+    width: 25%;
+}
+
+@mixin col-2 {
+    width: 16.66666%;
+}
+
+@mixin col-1 {
+    width: 8.33333%;
+}
+
+@mixin absolute-all {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@mixin zIndex-1 {
+    z-index: -1;
+}
+
+
+// padding
+
+@mixin p0-100{
+    padding: 0 100px;
+}
+@mixin p50-100{
+    padding: 50px 100px;
+}
+@mixin p10-100{
+    padding: 10px 100px;
+}
+@mixin p10-50{
+    padding: 10px 50px;
+}
+@mixin pl20{
+    padding-left: 20px;
+}
+@mixin pl40{
+    padding-left: 40px;
+}
+@mixin p20{
+    padding: 20px;
+}
+
+
+
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1270px;
+    }
+}
+
+@media (max-width : 1260px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 575px) {}

@@ -1,0 +1,149 @@
+@import './basic.scss';
+
+$purpleColor : RGB(100, 97, 252);
+$lightPurpleColor : RGB(138, 114, 239);
+$dashDarkColor : RGB(10, 23, 48);
+$lightDashColor : RGB(25, 40, 67);
+$greyColor : RGB(108, 112, 132);
+$orangeColor :RGB(252, 171, 6);
+
+
+
+.app-overlay{
+    @include absolute-all;
+    @include zIndex-1;
+    background-color: $dashDarkColor;
+}
+
+.navbar{
+    @include col-12;
+
+    height: 80px;
+    border-bottom: 1px solid white;
+
+
+    .row{
+        @include flex-row;
+        @include justify-content-space-between;
+        @include p0-100;
+    }
+
+    .header{
+        h1{
+            line-height: 80px;
+            color: $purpleColor;
+            font: {
+                size: 30px;
+                weight: bold;
+            };
+        }
+    }
+    .body{
+        @include flex-row;
+
+        gap: 30px;
+
+        .shop{
+            font-size: 30px;
+            line-height: 80px;
+            color: white;
+        }
+    }
+}
+
+.toppart{
+    .row{
+        @include p50-100;
+    }
+    .back{
+        background-color: $lightDashColor;
+        border-radius: 10px;
+
+        @include flex-row;
+        @include col-12;
+        @include p20;
+
+        .logo{
+            @include flex-row;
+            @include col-6;
+
+            border-right: 1px solid white;
+
+            img{
+                width: 64px;
+                height: 64px;
+                border-radius: 4px;
+                margin-right: 15px;
+            }
+
+            h5{
+                color: $lightPurpleColor;
+                font-size: 15px;
+                font-weight: bolder;
+                margin-bottom: 5px;
+            }
+
+            p{
+                color: $greyColor;
+                font-size: 17px;
+                font-weight: normal;
+            }
+        }
+        .product{
+            @include col-6;
+            @include flex-row;
+            @include pl40;
+
+            p{
+                color: white;
+                margin : 5px 0;
+                font-size: 17px;
+            }
+
+            .fir{
+                @include col-6;
+
+            }
+            .sec{
+                @include col-6;
+                p{
+                    @include flex-row;
+                    margin: 10px 0;
+                    gap: 10px;
+
+                    path{
+                        fill: $orangeColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navigation{
+    .row{
+        @include p0-100;
+
+    }
+    .body{
+        @include col-12;
+        @include flex-row;
+        
+        .nav-item{
+            @include p20;
+
+            a{
+                color: white;
+                font-size: 17px;
+                transition: all 0.3s ease;
+            }
+        }
+        .nav-item{
+            a{
+                color : $purpleColor;
+                border-bottom: 1px solid $purpleColor;
+            }
+        }
+
+    }
+}
